@@ -19,10 +19,9 @@ jobs:
         run: |
           unzip -o calc-project.zip
           cd calc-project
-          mkdir -p www assets
+          mkdir -p www
           cp index.html www/
           cp -r fonts www/fonts
-          cp icon-*.png assets/
           npm init -y
           npm i @capacitor/core @capacitor/cli @capacitor/android
           npm i -D @capacitor/assets
